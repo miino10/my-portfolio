@@ -54,7 +54,7 @@ const Main = () => {
         </div>
         {/* black part */}
         <div className="bg-[rgb(38,38,38)] w-full lg:max-w-[50%]  md:min-w-full  flex flex-col  mt-6  items-start   px-7 py-4">
-          <div className="  flex gap-4 mb-6 ">
+          <div className="  flex gap-4 mb-6 md:ml-16 ">
             <h1 className=" text-white text-sm font-bold md:text-base ">
               Project
               <br /> Statistics 2023
@@ -64,23 +64,24 @@ const Main = () => {
             </button>
           </div>
           <div className="text-white text-xs  flex flex-col gap-2   w-full md:text-base">
-            <div className="flex justify-between  ">
+            <div className="flex justify-between  md:ml-16 ">
               <p>Website Design</p>
               <p>75</p>
             </div>
-            <div className="flex justify-between  ">
+            <div className="flex justify-between  md:ml-16 ">
               <p>Mobile App Design</p>
               <p>64</p>
             </div>
-            <div className="flex justify-between  ">
+            <div className="flex justify-between  md:ml-16 ">
               <p>Brand Identity</p>
               <p>37</p>
             </div>
           </div>
         </div>
       </div>
-      <div className="md:flex-1 my-3 md:my-0 bg-red-400">
-        <Image src="/image.jpg" alt="" width={500} height={10} />
+      {/* className=" w-screen h-screen md flex-1 my-3 md:my-0 bg-red-400 relative" */}
+      <div className=" w-screen min-h-screen md:max-h-full   md:flex-1 my-3 md:my-0 relative">
+        <Image fill src="/image.jpg" alt="" />
       </div>
       {/* left part */}
     </div>
