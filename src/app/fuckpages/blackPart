@@ -1,0 +1,25 @@
+ <div className="bg-[rgb(38,38,38)] w-full h-full flex   flex-col justify-center gap-3  ">
+        <div>
+          <h1 className=" text-white text-xs">
+            Project
+            <br /> statistics 2023
+          </h1>
+          <button className="bg-[rgb(255,210,0)] p-1 text-xs font-bold ">
+            Know more
+          </button>
+        </div>{" "}
+        <div className="text-white text-xs ">
+          <div>
+            <p>Website Design</p>
+            <p>75</p>
+          </div>
+          <div>
+            <p>Mobile App Design</p>
+            <p>64</p>
+          </div>
+          <div>
+            <p>Brand Identity</p>
+            <p>37</p>
+          </div>
+        </div>
+      </div>
