@@ -40,7 +40,7 @@ const Main = () => {
               <h1 className="font-bold text-xl md:text-3xl ">+85</h1>
               <p className="text-xs md:text-base">Client work worldwide</p>
             </div>
-            <div className=" flex gap-8 items-center">
+            <div className=" flex gap-8 items-center  lg:gap-52">
               <div>
                 <h1 className="font-bold text-xl md:text-3xl">647</h1>
                 <p className="text-xs md:text-base">Project demo</p>
