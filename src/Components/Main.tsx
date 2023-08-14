@@ -59,7 +59,7 @@ const Main = () => {
               Project
               <br /> Statistics 2023
             </h1>
-            <button className="bg-[rgb(255,210,0)] px-1  text-xs font-bold md:px-3 md:text-base   ">
+            <button className="bg-green-300 px-1  text-xs font-bold md:px-3 md:text-base   ">
               Know more
             </button>
           </div>
