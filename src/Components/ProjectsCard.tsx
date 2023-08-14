@@ -39,14 +39,14 @@ const ProjectsCard = () => {
               Presenting a clone of a popular social media platform. Explore
               familiar features, connect with friends, share updates, and engage
               with content—all within a faithful recreation of the well-loved
-              social experience.
+              social experience. Immerse yourself in nostalgia.
             </p>
           </div>
         </div>
 
         {/* 3 */}
-        <div className="flex flex-col    m-4 w-72 h-96 px-4  lg:w-2/5">
-          <div className="w-full h-full relative flex  xl:pb-56  ">
+        <div className="flex flex-col     m-4 w-72 h-96 px-4  lg:w-2/5">
+          <div className="w-full h-full relative flex xl:pb-56   ">
             <Image
               alt=""
               src="/managmentsystem.png"
@@ -88,7 +88,7 @@ const ProjectsCard = () => {
         {/* 5 */}
       </div>
 
-      <Link href={"dashboard"} className="xl:mt-16">
+      <Link href={"Projects"} className="xl:mt-16">
         - - See More ! - -
       </Link>
     </div>
