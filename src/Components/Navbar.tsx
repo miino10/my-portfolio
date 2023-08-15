@@ -91,13 +91,18 @@ const Navbar = () => {
           </button>
 
           <div
-            className={`flex-col right-0 absolute z-50 bg-slate-400 top-full  mt-8 p-10 rounded-lg    ${
+            className={`flex-col  right-0  absolute z-50 bg-green-200 w-screen h-screen top-full mt-6    p-10 rounded-lg    ${
               isMenuOpen ? "flex   " : "hidden"
             } `}
           >
             {datas.map((data) => (
-              <Link className=" flex" key={data.id} href={data.url}>
-                <p className="text-3xl">{data.title}</p>
+              <Link
+                className=" flex"
+                key={data.id}
+                href={data.url}
+                onClick={toggleMenu}
+              >
+                <p className="text-6xl mb-7">{data.title}</p>
               </Link>
             ))}
           </div>
