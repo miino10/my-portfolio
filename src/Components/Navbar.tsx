@@ -17,25 +17,24 @@ const datas = [
   },
   {
     id: 3,
-    url: "/",
+    url: "",
     title: "About",
   },
   {
     id: 4,
-    url: "/",
+    url: "/Projects",
     title: "Projects",
-  },
-  {
-    id: 5,
-    url: "/",
-    title: "Services",
   },
 ];
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isWorksDropdownOpen, setisWorksDropdownOpen] = useState(false);
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
+  };
+  const toggleWorks = () => {
+    setisWorksDropdownOpen((prev) => !prev);
   };
   return (
     <div
@@ -51,19 +50,31 @@ const Navbar = () => {
           </Link>
         </div>
         {/* links */}
-        <div className="hidden h-full flex-1 md:flex md:flex-col md:justify-center relative   ">
+        <div className="hidden h-full flex-1 md:flex md:flex-col md:justify-center md:items-center relative   ">
           <div className="  justify-between gap-30  flex    items-center   ">
             <div className="flex gap-5 lg:gap-10 md:text-xs  md:px-4 ">
               {/* Add your navigation links here for medium and large screens */}
               {datas.map((data) => (
                 <Link className="flex" key={data.id} href={data.url}>
-                  <p className="  xl:text-xl lg:font-semibold xl:font-medium ">
+                  <p className=" lg:text-lg  xl:text-xl lg:font-semibold xl:font-medium ">
                     {data.title}
                   </p>
                   {data.id === 2 && (
-                    <span className="flex items-center ml-1">
-                      <FaChevronDown /> {/* Replace with the desired icon */}
-                    </span>
+                    <p
+                      className="flex items-center ml-1 "
+                      onClick={toggleWorks}
+                    >
+                      <FaChevronDown className="lg:ml-2 lg:text-xl" />{" "}
+                      {/* Replace with the desired icon */}
+                    </p>
+                  )}
+                  {data.id === 2 && isWorksDropdownOpen && (
+                    <div className="bg-green-300 md:top-8 md:w-36 md:left-10   md:text-sm md:p-3 lg:text-lg lg:w-52 left-20 lg:top-14 absolute rounded-md  xl:w-52   xl:top-8 xl:left-48">
+                      <p>1:Building Websites</p>
+                      <p>2:Testing</p>
+                      <p>3:Designing</p>
+                      <p>4:Debugging</p>
+                    </div>
                   )}
                 </Link>
               ))}
