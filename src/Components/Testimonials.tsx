@@ -12,14 +12,8 @@ const Testimonials = () => {
       <div className=" lg:flex lg:flex-col lg:gap-3 ">
         <div className="bg-green-100  m-3 flex flex-col p-5 rounded-lg gap-3 lg:">
           <div className="flex items-center gap-3">
-            <div className=" w-16 h-16 relative">
-              <Image
-                src="/testImage1.jpg"
-                fill
-                alt=""
-                objectFit="cover"
-                className="rounded-full"
-              ></Image>
+            <div className=" w-16 h-16 relative rounded-full overflow-hidden">
+              <Image src="/testImage1.jpg" alt="" fill={true}></Image>
             </div>
             <h2 className="text-xl font-semibold">Chio beng du</h2>
           </div>
@@ -34,14 +28,8 @@ const Testimonials = () => {
         {/* 2 */}
         <div className="bg-green-100  m-3 flex flex-col p-5 rounded-lg gap-3">
           <div className="flex items-center gap-3">
-            <div className=" w-16 h-16 relative">
-              <Image
-                src="/testImage2.jpg"
-                fill
-                alt=""
-                objectFit="cover"
-                className="rounded-full"
-              ></Image>
+            <div className=" w-16 h-16 relative rounded-full overflow-hidden">
+              <Image src="/testImage2.jpg" alt="" fill={true}></Image>
             </div>
             <h2 className="text-xl font-semibold">Hussien Yallaxow</h2>
           </div>
@@ -56,14 +44,8 @@ const Testimonials = () => {
         {/* 3 */}
         <div className="bg-green-100  m-3 flex flex-col p-5 rounded-lg gap-3">
           <div className="flex items-center gap-4">
-            <div className=" w-16 h-16 relative">
-              <Image
-                src="/testImage4.jpg"
-                fill
-                alt=""
-                objectFit="cover"
-                className="rounded-full"
-              ></Image>
+            <div className=" w-16 h-16 relative  rounded-full overflow-hidden">
+              <Image src="/testImage4.jpg" alt="" fill={true}></Image>
             </div>
             <h2 className="text-xl font-semibold">Amuda kulle</h2>
           </div>
@@ -79,14 +61,8 @@ const Testimonials = () => {
         {/* 4 */}
         <div className="bg-green-100 m-3 flex flex-col p-5 rounded-lg gap-3  ">
           <div className="flex items-center gap-4">
-            <div className=" w-16 h-16 relative">
-              <Image
-                src="/testImage5.jpg"
-                fill
-                alt=""
-                objectFit="cover"
-                className="rounded-full"
-              ></Image>
+            <div className=" w-16 h-16 relative rounded-full  overflow-hidden ">
+              <Image src="/testImage5.jpg" alt="" fill={true}></Image>
             </div>
             <h2 className="text-xl font-semibold">John winson</h2>
           </div>
