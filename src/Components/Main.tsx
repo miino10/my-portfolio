@@ -47,7 +47,7 @@ const Main = () => {
               </div>
               <div>
                 <h1 className="font-bold text-xl md:text-3xl ">Contact</h1>
-                <p className="text-xs md:text-base">hello@abdifataah.com</p>
+                <p className="text-xs md:text-base">abdifataah1619@gmail.com</p>
               </div>
             </div>
           </div>
